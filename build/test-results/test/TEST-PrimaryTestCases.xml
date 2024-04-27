@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PrimaryTestCases" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-27T16:39:09" hostname="ekansh-HP-Pavilion-x360-Convertible-14-dh1xxx" time="1.527">
+  <properties/>
+  <testcase name="testSFW" classname="PrimaryTestCases" time="1.527"/>
+  <system-out><![CDATA[[+] Logical RelNode:
+LogicalProject(FIRST_NAME=[$1])
+  LogicalFilter(condition=[AND(>($0, 100), <($0, 150))])
+    PTableScan(table=[[FILM_DB, actor]])
+
+[+] Physical RelNode:
+PProjectFilter(FIRST_NAME=[$1])
+  PTableScan(table=[[FILM_DB, actor]])
+
+PProject opened
+Filter opened
+class rel.PTableScan
+No more rows in PProjectFilter
+Closing PProjectFilter
+size is 49
+Test passed :)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

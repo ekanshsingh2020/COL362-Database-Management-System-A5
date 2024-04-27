@@ -1,0 +1,16 @@
+[+] Logical RelNode:
+ LogicalProject(FIRST_NAME=[$1])
+9  LogicalFilter(condition=[AND(>($0, 100), <($0, 150))])
+)    PTableScan(table=[[FILM_DB, actor]])
+
+[+] Physical RelNode:
+ PProjectFilter(FIRST_NAME=[$1])
+'  PTableScan(table=[[FILM_DB, actor]])
+
+PProject opened
+Filter opened
+class rel.PTableScan
+No more rows in PProjectFilter
+Closing PProjectFilter
+size is 49
+Test passed :)
